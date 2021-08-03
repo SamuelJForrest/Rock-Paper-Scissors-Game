@@ -261,7 +261,143 @@ header {
   animation-duration: 3s;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 550px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    max-height: 100vh;
+    background-color: #0877c2;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  header {
+    height: 10vh;
+    margin: 2vh 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title {
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    font-size: 7.5vw;
+    margin: 5vh 0 1vh 0;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-family: 'Chivo', sans-serif;
+    color: #fff;
+    font-size: 5vw;
+  }
+
+  .hands {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh 2vw 2vh 2vw;
+  }
+
+  .hands .player {
+    font-family: 'Chivo', sans-serif;
+    color: #fff;
+    margin-bottom: 2.5vh;
+    font-size: 2.5vh;
+    text-align: center;
+  }
+
+  .hands .score {
+    font-family: 'Chivo', sans-serif;
+    color: #fff;
+    font-size: 7vw;
+    margin-bottom: 2.5vh;
+    text-align: center;
+  }
+
+  .hands img {
+    filter: brightness(0) invert(1);
+    width: 20vw;
+    margin: 2.5vh 5vw 2.5vh 5vw;
+  }
+
+  .buttons {
+    width: 35vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons .btn {
+    height: 10vh;
+    margin: 0 0 4vh 0;
+    font-family: 'Chivo', sans-serif;
+    text-transform: inherit;
+    background-color: #f05159;
+    color: white;
+    font-size: 6vw;
+    border: none;
+  }
+
+  .buttons .reset {
+    background-color: #f05159;
+    border: none;
+    height: calc(4vh + 4vw);
+    width: calc(4vh + 4vw);
+    border-radius: 50%;
+    position: absolute;
+    left: 3vw;
+    bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons .reset img {
+    width: 5vw;
+    filter: brightness(0) invert(1);
+  }
+
+  @keyframes handMovement {
+    0% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(-5vh);
+    }
+    25% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5vh);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    65% {
+      transform: translateY(-5vh);
+    }
+    75% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(-5vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animated {
+    animation-name: handMovement;
+    animation-duration: 3s;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   body {
     margin: 0;
     padding: 0;
