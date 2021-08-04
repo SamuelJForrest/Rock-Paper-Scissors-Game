@@ -186,7 +186,12 @@ header {
 .hands img {
   filter: brightness(0) invert(1);
   width: 25vw;
-  margin: 2.5vh 5vw 2.5vh 5vw;
+  margin: 2.5vh 5vw;
+}
+
+.computer-hand,
+.player-hand {
+  text-align: center;
 }
 
 .buttons {
@@ -397,7 +402,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   body {
     margin: 0;
     padding: 0;
