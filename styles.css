@@ -329,6 +329,11 @@ header {
     margin: 2.5vh 5vw 2.5vh 5vw;
   }
 
+  .computer-hand,
+  .player-hand {
+    text-align: center;
+  }
+
   .buttons {
     width: 35vw;
     margin: 0 auto;
@@ -464,6 +469,11 @@ header {
     filter: brightness(0) invert(1);
     width: 12.5vw;
     margin-bottom: 6vh;
+  }
+
+  .computer-hand,
+  .player-hand {
+    text-align: center;
   }
 
   .buttons {
